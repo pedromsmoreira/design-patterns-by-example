@@ -8,7 +8,7 @@ It defines an interface for creating an object without specifiyng individual imp
 With this pattern you can define common methods and properties to all the objects created by the Factory Method.
 Each individual Factory Method lets you define what specific objects they will instantiate
 
-> Useful: Extremely.
+> Useful: Extremely. 
 > What it is good for? Creating objects in a related family.
 
 ### Participants
