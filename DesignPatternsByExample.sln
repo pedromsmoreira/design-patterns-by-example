@@ -5,19 +5,25 @@ VisualStudioVersion = 15.0.26730.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{D54E4C11-92D5-4B35-AD36-E5E7E6045588}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuilderPattern", "src\BuilderPattern\BuilderPattern.csproj", "{08E7570B-42A6-48EF-B581-A8B4E0F90BCE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BuilderPattern", "src\BuilderPattern\BuilderPattern.csproj", "{08E7570B-42A6-48EF-B581-A8B4E0F90BCE}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{9C555F9E-C12D-4E64-A170-BE7D1BC74017}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{4B157FFD-B85F-4627-8EB0-E403330E7696}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FactoryMethodPattern", "src\FactoryMethodPattern\FactoryMethodPattern.csproj", "{CB7C33D8-C26B-4182-8EEC-2E0B13B5D692}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FactoryMethodPattern", "src\FactoryMethodPattern\FactoryMethodPattern.csproj", "{CB7C33D8-C26B-4182-8EEC-2E0B13B5D692}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryPattern", "src\AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{E254FB01-3827-4FF2-A54C-41E6B142B0F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactoryPattern", "src\AbstractFactoryPattern\AbstractFactoryPattern.csproj", "{E254FB01-3827-4FF2-A54C-41E6B142B0F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrototypePattern", "src\PrototypePattern\PrototypePattern.csproj", "{CCFC6767-58FE-46FD-B2D4-F10707DC9D91}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrototypePattern", "src\PrototypePattern\PrototypePattern.csproj", "{CCFC6767-58FE-46FD-B2D4-F10707DC9D91}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SingletonPattern", "src\SingletonPattern\SingletonPattern.csproj", "{42EDAB1C-1B23-4057-BEE7-D280C0EE880B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SingletonPattern", "src\SingletonPattern\SingletonPattern.csproj", "{42EDAB1C-1B23-4057-BEE7-D280C0EE880B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6B33C8CA-B362-4DD4-B570-39E1B8D2AB15}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+		Settings.StyleCop = Settings.StyleCop
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
