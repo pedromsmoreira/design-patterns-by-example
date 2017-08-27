@@ -1,12 +1,23 @@
-﻿using System;
-
-namespace FactoryMethodPattern
+﻿namespace FactoryMethodPattern
 {
-    class Program
+    using System;
+    using ConcreteCreator;
+
+    internal class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var v8Car = new V8Car();
+
+            v8Car.PrintDetails();
+
+            Console.ReadLine();
+
+            var twinTurboCar = new TwinTurboCar();
+
+            twinTurboCar.PrintDetails();
+
+            Console.ReadLine();
         }
     }
 }
