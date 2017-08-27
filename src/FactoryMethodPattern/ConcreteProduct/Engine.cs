@@ -1,6 +1,5 @@
 ﻿namespace FactoryMethodPattern.ConcreteProduct
 {
-    using System;
     using Product;
 
     public class Engine : Part
@@ -24,6 +23,4 @@
             return $"Type: {this.Type}";
         }
     }
-
-    
 }
