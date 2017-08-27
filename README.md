@@ -3,6 +3,7 @@
 [Github Page](https://pedromsmoreira.github.io/design-patterns-by-example/)
 
 [![CodeFactor](https://www.codefactor.io/repository/github/pedromsmoreira/design-patterns-by-example/badge)](https://www.codefactor.io/repository/github/pedromsmoreira/design-patterns-by-example)
+[![Build status](https://ci.appveyor.com/api/projects/status/384q154ua7slawyj/branch/master?svg=true)](https://ci.appveyor.com/project/pedromsmoreira/design-patterns-by-example/branch/master)
 
 This a compilation of the Creational, Behavioral and Structural Design Patterns found in the GoF book.
 
