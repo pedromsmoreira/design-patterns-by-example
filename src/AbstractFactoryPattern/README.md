@@ -21,6 +21,5 @@ This pattern allows the use of __*Dependency Injection*__.
  * __Product:__ Defines an object that will be created by the corresponding __ConcreteFactory__.
  * __AbstractProduct:__ Declares the interface for a type of product.
  * __AbstractFactory:__ Declares the interface for operations which will result in the creation of __AbstractProducts__ objects. 
-			The __Creator__ can also define a default implementation of teh _factory method_.
  * __ConcreteFactory:__ Has the implementations of the operations defined in the __AbstractFactory__.
  * __Client:__ Uses the __AbstractFactory__ and __AbstractProduct__ interfaces.
