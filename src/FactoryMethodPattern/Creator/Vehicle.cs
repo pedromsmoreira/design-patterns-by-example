@@ -3,7 +3,6 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
-    using ConcreteCreator;
     using Product;
 
     public abstract class Vehicle
@@ -15,10 +14,10 @@
 
         public abstract string Name { get; }
 
+        public List<Part> Parts { get; } = new List<Part>();
+
         // Factory Method
         public abstract void CreateParts();
-
-        public List<Part> Parts { get; } = new List<Part>();
 
         public void PrintDetails()
         {

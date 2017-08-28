@@ -7,9 +7,9 @@
     {
         private static void Main(string[] args)
         {
-            var v8Car = new V8Car();
+            var v8mCar = new V8Car();
 
-            v8Car.PrintDetails();
+            v8mCar.PrintDetails();
 
             Console.ReadLine();
 
