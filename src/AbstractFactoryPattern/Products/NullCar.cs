@@ -2,7 +2,7 @@
 {
     using AbstractProduct;
 
-    public class NullMercedes : Bike
+    public class NullCar : Car
     {
         public override bool IsNullable()
         {

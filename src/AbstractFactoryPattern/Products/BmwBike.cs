@@ -2,7 +2,7 @@
 {
     using AbstractProduct;
 
-    internal class BmwBike : Bike
+    internal class BmwBike : AbstractProduct.Bike
     {
         public override bool IsNullable()
         {

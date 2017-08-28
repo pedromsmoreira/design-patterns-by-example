@@ -8,7 +8,7 @@ namespace AbstractFactoryPattern.Factory
     {
         public override Car CreateCar()
         {
-            return new NullKtm();
+            return new NullCar();
         }
 
         public override Bike CreateBike()

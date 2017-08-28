@@ -13,7 +13,7 @@ namespace AbstractFactoryPattern.Factory
 
         public override Bike CreateBike()
         {
-            return new NullMercedes();
+            return new NullBike();
         }
     }
 }
