@@ -1,6 +1,6 @@
 ﻿# What is this Pattern ?
 
-## Factory Methd
+## Factory Method
 
 The Factory Method pattern belong to the Creational group of patterns.
 
