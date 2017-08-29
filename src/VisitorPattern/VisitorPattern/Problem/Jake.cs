@@ -12,5 +12,5 @@ namespace VisitorPattern.Problem
         {
             Console.WriteLine("Jake loves Mary.");
         }
-    };
+    }
 }
