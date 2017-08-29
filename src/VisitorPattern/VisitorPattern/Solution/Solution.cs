@@ -1,19 +1,8 @@
 ﻿namespace VisitorPattern.Solution
 {
-    using System;
-
-    public class Solution
+    public class Solution : BaseExample
     {
-        public void Run()
-        {
-            Console.WriteLine("Running ExpectedResult()");
-            this.ExpectedResult();
-
-            Console.WriteLine("Running UnexpectedResult()");
-            this.UnexpectedResult();
-        }
-
-        public void ExpectedResult()
+        public override void ExpectedResult()
         {
             Man theMan = new Man();
             Jake jake = new Jake();
@@ -26,7 +15,7 @@
             mary.Accept(jake);
 
             /*  The previous code will print:
-             
+
                     > Every man loves every woman!
                     > Every man loves Mary.
                     > Jake loves every woman!
@@ -36,7 +25,7 @@
             */
         }
 
-        public void UnexpectedResult()
+        public override void UnexpectedResult()
         {
             // Note the different data types!
             Man jakeRef = new Jake();
@@ -44,7 +33,7 @@
             maryRef.Accept(jakeRef);
 
             /*  The previous code will print:
-               
+
                     > Jake loves Mary.
 
                 As expected!
@@ -52,4 +41,3 @@
         }
     }
 }
- 

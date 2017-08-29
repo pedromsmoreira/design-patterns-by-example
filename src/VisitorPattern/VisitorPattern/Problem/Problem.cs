@@ -1,19 +1,8 @@
 ﻿namespace VisitorPattern.Problem
 {
-    using System;
-
-    public class Problem
+    public class Problem : BaseExample
     {
-        public void Run()
-        {
-            Console.WriteLine("Running ExpectedResult()");
-            this.ExpectedResult();
-
-            Console.WriteLine("Running UnexpectedResult()");
-            this.UnexpectedResult();
-        }
-
-        public void ExpectedResult()
+        public override void ExpectedResult()
         {
             Man theMan = new Man();
             Jake jake = new Jake();
@@ -26,7 +15,7 @@
             jake.Loves(mary);
 
             /*  The previous code will print:
-             
+
                     > Every man loves every woman!
                     > Every man loves Mary.
                     > Jake loves every woman!
@@ -36,7 +25,7 @@
             */
         }
 
-        public void UnexpectedResult()
+        public override void UnexpectedResult()
         {
             // Note the different data types!
             Man jakeRef = new Jake();
@@ -44,16 +33,15 @@
             jakeRef.Loves(maryRef);
 
             /*  The previous code will print:
-               
+
                     > Jake loves every woman!
 
                 instead of
 
-                    > ExplodingAsteroid hit an ApolloSpacecraft
+                    > Jake loves Mary.
 
                 Runtime chooses method dynamically based on theExplodingAsteroidRef ONLY!
             */
         }
     }
 }
- 
