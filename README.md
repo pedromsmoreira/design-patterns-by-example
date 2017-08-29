@@ -15,7 +15,7 @@ Each pattern has an example implementation in order to allow a better approach t
 
 - [x] [Factory Method](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/FactoryMethodPattern)
 - [x] [Abstract Factory](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/AbstractFactoryPattern)
-- [ ] [Builder](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/BuilderPattern)
+- [x] [Builder](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/BuilderPattern)
 - [ ] [Prototype](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/PrototypePattern)
 - [ ] [Singleton](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/SingletonPattern)
 
