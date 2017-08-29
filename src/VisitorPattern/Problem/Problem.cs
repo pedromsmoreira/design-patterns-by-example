@@ -40,7 +40,7 @@
 
                     > Jake loves Mary.
 
-                Runtime chooses method dynamically based on theExplodingAsteroidRef ONLY!
+                Runtime chooses method dynamically based on jakeRef ONLY!
             */
         }
     }
