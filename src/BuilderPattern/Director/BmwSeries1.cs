@@ -1,6 +1,5 @@
 ﻿namespace BuilderPattern.Director
 {
-    using Builder;
     using ConcreteBuilder;
     using Product;
     using Product.Parts;
@@ -9,22 +8,13 @@
     {
         public BmwSeries1()
         {
+            // you can use the other builders instead of the concrete object
             this.Car = new VehicleBuilder()
+                .WithType(VehicleType.Car)
                 .WithBrand(Brand.Bmw)
-                .WithEngine(
-                    new EngineBuilder()
-                        .WithType(EngineType.TwinTurbo)
-                        .Build())
-                .WithWheels(
-                    new WheelsBuilder()
-                        .WithQuantity(4)
-                        .WithType("chrome")
-                        .Build())
-                .WithSeats(
-                    new SeatsBuilder()
-                        .WithSeatsBrand(SeatsBrand.Regular)
-                        .WithTotalOf(5)
-                        .Build())
+                .WithEngine(new Engine(EngineType.TwinTurbo))
+                .WithWheels(new Wheel(4, "chrome"))
+                .WithSeats(new Seat(5, SeatsBrand.Regular))
                 .Build();
         }
 
