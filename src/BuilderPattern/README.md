@@ -21,3 +21,13 @@ This is done in order to allow that the same construction process can create dif
  * __Product:__ Represents the object being created. Includes classes for defining the parts of the object, including any interfaces for assembling the parts into the final result. 
 			The __Creator__ can also define a default implementation of teh _factory method_.
  * __Director:__ Responsible for constructing an object using the __Builder__.
+
+ 
+
+### Useful resources
+
+> https://www.exceptionnotfound.net/builder-the-daily-design-pattern/
+
+> http://blog.ploeh.dk/2017/08/21/generalised-test-data-builder/
+
+> http://www.codeguru.com/columns/dotnet/.net-design-patterns-the-builder-pattern.html

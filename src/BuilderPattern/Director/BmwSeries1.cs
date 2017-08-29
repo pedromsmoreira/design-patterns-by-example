@@ -1,6 +1,7 @@
-﻿namespace BuilderPattern.ConcreteBuilder
+﻿namespace BuilderPattern.Director
 {
     using Builder;
+    using ConcreteBuilder;
     using Product;
     using Product.Parts;
 

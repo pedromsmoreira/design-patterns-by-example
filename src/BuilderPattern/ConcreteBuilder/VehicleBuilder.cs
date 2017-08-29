@@ -1,10 +1,13 @@
-﻿namespace BuilderPattern.Builder
+﻿namespace BuilderPattern.ConcreteBuilder
 {
+    using Builder;
     using Product;
     using Product.Parts;
 
-    public class VehicleBuilder
+    public class VehicleBuilder : IVehicleBuilder
     {
+        private VehicleType type;
+
         private Brand brand;
 
         private Engine engine;
@@ -16,9 +19,16 @@
         public VehicleBuilder()
         {
             this.brand = Brand.None;
+            this.type = VehicleType.None;
             this.engine = new EngineBuilder().Build();
             this.wheels = new WheelsBuilder().Build();
             this.seats = new SeatsBuilder().Build();
+        }
+
+        public VehicleBuilder WithType(VehicleType type)
+        {
+            this.type = type;
+            return this;
         }
 
         public VehicleBuilder WithBrand(Brand brand)
@@ -49,7 +59,7 @@
 
         public Vehicle Build()
         {
-            return new Vehicle(this.brand, this.engine, this.wheels, this.seats);
+            return new Vehicle(this.type, this.brand, this.engine, this.wheels, this.seats);
         }
     }
 }
