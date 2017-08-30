@@ -15,7 +15,6 @@
             this.name = name;
         }
 
-
         public void SendMessage(string message)
         {
             Console.WriteLine($"User Type: Basic -- {this.name}; Sent Message: {message}");

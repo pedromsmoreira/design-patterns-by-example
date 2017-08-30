@@ -16,12 +16,12 @@
 
         public void AddUser(IUser user)
         {
-            users.Add(user);
+            this.users.Add(user);
         }
 
         public void SendMessage(string message, IUser sender)
         {
-            foreach (var user in users)
+            foreach (var user in this.users)
             {
                 if (user != sender)
                 {
