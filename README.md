@@ -40,7 +40,7 @@ Each pattern has an example implementation in order to allow a better approach t
 - [ ] State
 - [ ] Strategy
 - [ ] Template Method
-- [ ] Visitor
+- [x] [Visitor](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/VisitorPattern)
 
 
 # If you want to contribute please do the following.
