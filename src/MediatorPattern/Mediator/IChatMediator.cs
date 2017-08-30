@@ -4,8 +4,8 @@
 
     public interface IChatMediator
     {
-        void AddUser(IUser user);
+        void AddCharacter(ICharacter character);
 
-        void SendMessage(string message, IUser sender);
+        void SendMessage(string message, ICharacter sender);
     }
 }

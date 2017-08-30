@@ -1,6 +1,6 @@
 ﻿namespace MediatorPattern.Colleague
 {
-    public interface IUser
+    public interface ICharacter
     {
         void SendMessage(string message);
 

@@ -7,25 +7,25 @@
 
     public class ChatMediator : IChatMediator
     {
-        private List<IUser> users;
+        private List<ICharacter> characters;
 
         public ChatMediator()
         {
-            this.users = new List<IUser>();    
+            this.characters = new List<ICharacter>();    
         }
 
-        public void AddUser(IUser user)
+        public void AddCharacter(ICharacter character)
         {
-            this.users.Add(user);
+            this.characters.Add(character);
         }
 
-        public void SendMessage(string message, IUser sender)
+        public void SendMessage(string message, ICharacter sender)
         {
-            foreach (var user in this.users)
+            foreach (var character in this.characters)
             {
-                if (user != sender)
+                if (character != sender)
                 {
-                    user.ReceiveMessage(message);
+                    character.ReceiveMessage(message);
                 }
             }
         }
