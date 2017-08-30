@@ -34,7 +34,7 @@ Each pattern has an example implementation in order to allow a better approach t
 - [ ] Chain of Responsibility
 - [ ] Command
 - [ ] Iterator
-- [ ] Mediator
+- [x] [Mediator](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/MediatorPattern)
 - [ ] Memento
 - [ ] Observer
 - [ ] State
