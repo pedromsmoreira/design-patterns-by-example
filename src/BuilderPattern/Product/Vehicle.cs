@@ -14,15 +14,15 @@
             this.Wheels = wheel;
         }
 
-        public VehicleType VehicleType { get; set; }
+        public VehicleType VehicleType { get; }
 
-        public Brand Brand { get; set; }
+        public Brand Brand { get; }
 
-        public Engine Engine { get; set; }
+        public Engine Engine { get; }
 
-        public Wheel Wheels { get; set; }
+        public Wheel Wheels { get; }
 
-        public Seat Seats { get; set; }
+        public Seat Seats { get; }
 
         public void ShowDescription()
         {

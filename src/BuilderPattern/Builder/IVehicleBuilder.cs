@@ -6,15 +6,15 @@
 
     public interface IVehicleBuilder
     {
-        VehicleBuilder WithBrand(Brand brand);
+        IVehicleBuilder WithBrand(Brand brand);
 
-        VehicleBuilder WithType(VehicleType type);
+        IVehicleBuilder WithType(VehicleType type);
 
-        VehicleBuilder WithEngine(Engine engine);
+        IVehicleBuilder WithEngine(Engine engine);
 
-        VehicleBuilder WithWheels(Wheel wheel);
+        IVehicleBuilder WithWheels(Wheel wheel);
 
-        VehicleBuilder WithSeats(Seat seat);
+        IVehicleBuilder WithSeats(Seat seat);
 
         Vehicle Build();
     }

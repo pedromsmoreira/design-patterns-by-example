@@ -11,7 +11,7 @@
 
             var bmw = new BmwSeries1();
 
-            bmw.Car.ShowDescription();
+            bmw.Vehicle.ShowDescription();
 
             Console.ReadLine();
         }

@@ -25,32 +25,32 @@
             this.seats = new SeatsBuilder().Build();
         }
 
-        public VehicleBuilder WithType(VehicleType type)
+        public IVehicleBuilder WithType(VehicleType type)
         {
             this.type = type;
             return this;
         }
 
-        public VehicleBuilder WithBrand(Brand brand)
+        public IVehicleBuilder WithBrand(Brand brand)
         {
             this.brand = brand;
             return this;
         }
 
-        public VehicleBuilder WithEngine(Engine engine)
+        public IVehicleBuilder WithEngine(Engine engine)
         {
             this.engine = engine;
             return this;
         }
 
-        public VehicleBuilder WithWheels(Wheel wheel)
+        public IVehicleBuilder WithWheels(Wheel wheel)
         {
             this.wheels = wheel;
 
             return this;
         }
 
-        public VehicleBuilder WithSeats(Seat seat)
+        public IVehicleBuilder WithSeats(Seat seat)
         {
             this.seats = seat;
 

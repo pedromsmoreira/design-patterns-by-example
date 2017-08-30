@@ -9,7 +9,7 @@
         public BmwSeries1()
         {
             // you can use the other builders instead of the concrete object
-            this.Car = new VehicleBuilder()
+            this.Vehicle = new VehicleBuilder()
                 .WithType(VehicleType.Car)
                 .WithBrand(Brand.Bmw)
                 .WithEngine(new Engine(EngineType.TwinTurbo))
@@ -18,6 +18,6 @@
                 .Build();
         }
 
-        public Vehicle Car { get; set; }
+        public Vehicle Vehicle { get; }
     }
 }
