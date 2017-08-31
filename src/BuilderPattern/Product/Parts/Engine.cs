@@ -1,7 +1,5 @@
-﻿namespace FactoryMethodPattern.ConcreteProduct
+﻿namespace BuilderPattern.Product.Parts
 {
-    using Product;
-
     public class Engine : Part
     {
         public Engine(EngineType type)

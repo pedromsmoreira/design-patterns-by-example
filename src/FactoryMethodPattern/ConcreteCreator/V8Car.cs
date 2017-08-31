@@ -9,7 +9,7 @@ namespace FactoryMethodPattern.ConcreteCreator
 
         public override void CreateParts()
         {
-            this.Parts.Add(new Engine(Engine.EngineType.V8));
+            this.Parts.Add(new Engine(EngineType.V8));
             this.Parts.Add(new Seat(2));
             this.Parts.Add(new Wheel(4));
         }

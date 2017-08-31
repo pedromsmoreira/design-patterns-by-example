@@ -1,33 +1,23 @@
 ﻿# What is this Pattern ?
 
-## Builder
+## Factory Method
 
-The Builder pattern belongs to the Creational group of patterns.
+The Factory Method pattern belong to the Creational group of patterns.
 
-This pattern separates the construction of an object from its representation.
+It defines an interface for creating an object without specifiyng individual implementations of that interface.
 
-This is done in order to allow that the same construction process can create different representations.
+With this pattern you can define common methods and properties to all the objects created by the Factory Method.
 
-> Useful: Not so much. 
+Each individual Factory Method lets you define what specific objects they will instantiate
 
-> What it is good for? Creating objects which need several steps to happen in order., but the steps are different for different specific implementations.
+> Useful: Extremely. 
+
+> What it is good for? Creating objects in a related family.
 
 ### Participants
 
- * __Builder:__ Defines an abstract interface for creating parts of the __Product__.
- * __ConcreteBuilder:__ Responsible for constructing and assembling parts of the product by implementing the __Builder__.
-	It must keep track and define the representation it creates.
-	
- * __Product:__ Represents the object being created. Includes classes for defining the parts of the object, including any interfaces for assembling the parts into the final result. 
+ * __Product:__ Defines the interface of object the factory will create.
+ * __ConcreteProduct:__ Has the objects that implement the __Product__ interface.
+ * __Creator:__ Declares the _factory method_, which returns an object of type __Product__. 
 			The __Creator__ can also define a default implementation of teh _factory method_.
- * __Director:__ Responsible for constructing an object using the __Builder__.
-
- 
-
-### Useful resources
-
-> https://www.exceptionnotfound.net/builder-the-daily-design-pattern/
-
-> http://blog.ploeh.dk/2017/08/21/generalised-test-data-builder/
-
-> http://www.codeguru.com/columns/dotnet/.net-design-patterns-the-builder-pattern.html
+ * __ConcreteCreator:__ Has the objects that override the _factory method_ to return an instance of a __ConcreteProduct__.
