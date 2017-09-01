@@ -36,7 +36,7 @@ Each pattern has an example implementation in order to allow a better approach t
 - [ ] Iterator
 - [x] [Mediator](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/MediatorPattern)
 - [ ] Memento
-- [ ] Observer
+- [x] [Observer](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/ObserverPattern)
 - [ ] State
 - [ ] Strategy
 - [ ] Template Method
