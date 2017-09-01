@@ -1,10 +1,12 @@
 ﻿namespace ObserverPattern.Subject
 {
-    public interface IAccount<in T>
-    {
-        void Attach(T subject);
+    using Observer;
 
-        void Detach(T subject);
+    public interface IAccount
+    {
+        void Attach(IClient subject);
+
+        void Detach(IClient subject);
 
         void Notify(string message);
     }

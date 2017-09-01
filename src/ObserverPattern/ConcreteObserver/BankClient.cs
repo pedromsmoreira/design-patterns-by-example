@@ -30,7 +30,7 @@
             this.clientAccount.Withdraw(this.Name, amount);
         }
 
-        public void Update(Account account, string message)
+        public void Update(IAccount account, string message)
         {
             Console.WriteLine($"Notified {this.Name} about transaction in {this.clientAccount.Type}");
             Console.WriteLine(message);

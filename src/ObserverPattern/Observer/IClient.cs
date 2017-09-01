@@ -6,6 +6,6 @@
     {
         string Name { get; }
 
-        void Update(Account account, string message);
+        void Update(IAccount account, string message);
     }
 }

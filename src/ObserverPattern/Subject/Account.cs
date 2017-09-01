@@ -3,9 +3,9 @@
     using System.Collections.Generic;
     using Observer;
 
-    public abstract class Account : IAccount<IClient>
+    public abstract class Account : IAccount
     {
-        public Account(string type)
+        protected Account(string type)
         {
             this.Type = type;
             this.Owners = new List<IClient>();
