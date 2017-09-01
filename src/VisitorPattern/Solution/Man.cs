@@ -8,6 +8,7 @@ namespace VisitorPattern.Solution
         {
             Console.WriteLine("Every man loves every woman!");
         }
+
         public virtual void Loves(Mary mary)
         {
             Console.WriteLine("Every man loves Mary.");
