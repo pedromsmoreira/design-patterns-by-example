@@ -8,7 +8,7 @@ This pattern is a mechanism for drastically reduce coupling between interacting 
 
 > Define a one to many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
-> Encapsulate teh core or common or engine components in a __Subject__ abstraction and the variable components in an Observer hierarchy.
+> Encapsulate the core or common or engine components in a __Subject__ abstraction and the variable components in an Observer hierarchy.
 
 ### Can be applied when:
 
