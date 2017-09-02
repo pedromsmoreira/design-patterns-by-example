@@ -5,7 +5,7 @@
     using Observer;
     using Subject;
 
-    public class BankClient : IClientObserver
+    public class BankClient : IBankClient, IBankClientObserver
     {
         private readonly IBankAccount clientAccount;
 

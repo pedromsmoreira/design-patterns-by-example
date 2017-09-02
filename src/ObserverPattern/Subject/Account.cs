@@ -3,24 +3,25 @@
     using System.Collections.Generic;
     using Observer;
 
-    public abstract class Account : IAccount
+    public abstract class Account : IAccount, IObservable<IBankClientObserver>
     {
-        private readonly IList<IClientObserver> observers;
+        private readonly IList<IBankClientObserver> observers;
 
         protected Account(string type)
         {
             this.Type = type;
-            this.observers = new List<IClientObserver>();
+            this.observers = new List<IBankClientObserver>();
         }
 
         public string Type { get; }
 
-        public void Attach(IClientObserver observer)
+        public void Attach(IBankClientObserver observer)
         {
             this.observers.Add(observer);
         }
 
-        public void Detach(IClientObserver observer)
+        public void Detach(IBankClientObserver
+            observer)
         {
             this.observers.Remove(observer);
         }

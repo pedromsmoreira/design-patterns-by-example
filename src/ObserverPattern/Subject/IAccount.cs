@@ -1,8 +1,6 @@
 ﻿namespace ObserverPattern.Subject
 {
-    using Observer;
-
-    public interface IAccount : IObservable<IClientObserver>
+    public interface IAccount
     {
         string Type { get; }
 
