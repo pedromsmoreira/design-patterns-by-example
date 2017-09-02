@@ -26,11 +26,11 @@
             this.observers.Remove(observer);
         }
 
-        public void Notify(string message)
+        protected virtual void Notify(ITransaction transactionEvent)
         {
             foreach (var observer in this.observers)
             {
-                observer.Update(this, message);
+                observer.Update(this, transactionEvent);
             }
         }
     }

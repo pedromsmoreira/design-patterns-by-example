@@ -2,7 +2,7 @@
 {
     using Subject;
 
-    public interface IBankClientObserver : IObserver<IAccount>
+    public interface IBankClientObserver : IObserver<IAccount, ITransaction>
     {
     }
 }

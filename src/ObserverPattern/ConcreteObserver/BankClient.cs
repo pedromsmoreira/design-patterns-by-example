@@ -30,10 +30,19 @@
             this.clientAccount.Withdraw(this.Name, amount);
         }
 
-        public void Update(IAccount account, string message)
+        public void Update(IAccount subject, ITransaction observedEvent)
         {
             Console.WriteLine($"Notified {this.Name} about transaction in {this.clientAccount.Type}");
-            Console.WriteLine(message);
+            TransactionDetails(observedEvent);
+        }
+
+        private static void TransactionDetails(ITransaction transaction)
+        {
+            Console.WriteLine($"Transaction Executed By: {transaction.ExecutedBy}");
+            Console.WriteLine($"Transaction Type: {transaction.TransactionType}");
+            Console.WriteLine($"Transaction Status: {transaction.Status}");
+            Console.WriteLine($"Transaction Amount Transactioned: {transaction.AmountTransactioned}");
+            Console.WriteLine($"Transaction Total Amount: {transaction.TotalAmount}");
         }
     }
 }

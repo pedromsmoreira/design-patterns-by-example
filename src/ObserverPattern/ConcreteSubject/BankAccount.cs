@@ -1,5 +1,6 @@
 ﻿namespace ObserverPattern.ConcreteSubject
 {
+    using System.Transactions;
     using Subject;
 
     public class BankAccount : Account, IBankAccount
@@ -16,11 +17,11 @@
             if (amount > decimal.Zero)
             {
                 this.Amount += amount;
-                this.Notify($"{owner} Deposited ${amount} | Total Amount: ${this.Amount}");
+                this.Notify(new BankAccountTransaction(owner, amount, this.Amount, TransactionType.Deposit, TransactionStatus.Committed));
             }
             else
             {
-                this.Notify($"{owner} tried to deposit an invalid amount. | Amount: ${amount}");
+                this.Notify(new BankAccountTransaction(owner, amount, this.Amount, TransactionType.Deposit, TransactionStatus.Aborted));
             }
         }
 
@@ -29,11 +30,11 @@
             if (amount > decimal.Zero && this.Amount > decimal.Zero && amount < this.Amount)
             {
                 this.Amount -= amount;
-                this.Notify($"{owner} withdrawed ${amount} | Total Amount: ${this.Amount}");
+                this.Notify(new BankAccountTransaction(owner, amount, this.Amount, TransactionType.Withdraw, TransactionStatus.Committed));
             }
             else
             {
-                this.Notify($"{owner} tried to withdraw an invalid amount. | Amount: ${amount}");
+                this.Notify(new BankAccountTransaction(owner, amount, this.Amount, TransactionType.Withdraw, TransactionStatus.Aborted));
             }
         }
     }

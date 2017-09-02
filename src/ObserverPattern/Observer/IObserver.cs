@@ -1,7 +1,9 @@
 ﻿namespace ObserverPattern.Observer
 {
-    public interface IObserver<in T>
+    using System;
+
+    public interface IObserver<in TSubject, in TEvent>
     {
-        void Update(T account, string message);
+        void Update(TSubject subject, TEvent observedEvent);
     }
 }
