@@ -2,11 +2,9 @@
 {
     using Observer;
 
-    public interface IAccount
+    public interface IAccount : IObservable<IClientObserver>
     {
-        void Attach(IClient subject);
-
-        void Detach(IClient subject);
+        string Type { get; }
 
         void Notify(string message);
     }

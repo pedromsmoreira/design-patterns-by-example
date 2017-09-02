@@ -5,31 +5,31 @@
 
     public abstract class Account : IAccount
     {
+        private readonly IList<IClientObserver> observers;
+
         protected Account(string type)
         {
             this.Type = type;
-            this.Owners = new List<IClient>();
+            this.observers = new List<IClientObserver>();
         }
 
         public string Type { get; }
 
-        public IList<IClient> Owners { get; }
-
-        public void Attach(IClient subject)
+        public void Attach(IClientObserver observer)
         {
-            this.Owners.Add(subject);
+            this.observers.Add(observer);
         }
 
-        public void Detach(IClient subject)
+        public void Detach(IClientObserver observer)
         {
-            this.Owners.Remove(subject);
+            this.observers.Remove(observer);
         }
 
         public void Notify(string message)
         {
-            foreach (var user in this.Owners)
+            foreach (var observer in this.observers)
             {
-                user.Update(this, message);
+                observer.Update(this, message);
             }
         }
     }

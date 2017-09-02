@@ -2,10 +2,8 @@
 {
     using Subject;
 
-    public interface IClient
+    public interface IClientObserver : IObserver<IAccount>
     {
         string Name { get; }
-
-        void Update(IAccount account, string message);
     }
 }

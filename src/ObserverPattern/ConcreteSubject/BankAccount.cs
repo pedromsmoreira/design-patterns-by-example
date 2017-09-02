@@ -2,7 +2,7 @@
 {
     using Subject;
 
-    public class BankAccount : Account
+    public class BankAccount : Account, IBankAccount
     {
         public BankAccount(string type) : base(type)
         {
@@ -36,5 +36,12 @@
                 this.Notify($"{owner} tried to withdraw an invalid amount. | Amount: ${amount}");
             }
         }
+    }
+
+    public interface IBankAccount
+    {
+        void Deposit(string owner, decimal amount);
+
+        void Withdraw(string owner, decimal amount);
     }
 }
