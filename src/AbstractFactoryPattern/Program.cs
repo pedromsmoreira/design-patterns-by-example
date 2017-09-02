@@ -9,7 +9,22 @@
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Client!");
+            Console.WriteLine("Abstract Factory using only Composition");
+
+            var bmwSeries1 = new BmwSeries1().CreateCar();
+            var mercedesClassA = new MercedesClassA().CreateCar();
+
+            bmwSeries1.Driving.Accelerate(10);
+
+            mercedesClassA.Driving.Accelerate(25);
+
+            bmwSeries1.Driving.Accelerate(20);
+
+            bmwSeries1.PrintDetails();
+            mercedesClassA.PrintDetails();
+
+            Console.ReadLine();
+
             char input;
             do
             {
@@ -57,22 +72,6 @@
                 Console.ReadLine();
             }
             while (!input.Equals(char.ToUpper('e')));
-
-            Console.WriteLine("Abstract Factory using only Composition");
-
-            var bmwSeries1 = new BmwSeries1().CreateCar();
-            var mercedesClassA = new MercedesClassA().CreateCar();
-
-            bmwSeries1.Driving.Accelerate(10);
-
-            mercedesClassA.Driving.Accelerate(25);
-
-            bmwSeries1.Driving.Accelerate(20);
-
-            bmwSeries1.PrintDetails();
-            mercedesClassA.PrintDetails();
-
-            Console.ReadLine();
         }
     }
 }
