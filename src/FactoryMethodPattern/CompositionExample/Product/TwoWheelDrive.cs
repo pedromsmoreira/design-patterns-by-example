@@ -1,7 +1,5 @@
-﻿namespace FactoryMethodPattern.CompositionExample.ConcreteProduct
+﻿namespace FactoryMethodPattern.CompositionExample.Product
 {
-    using Product;
-
     public class TwoWheelDrive : IDriving
     {
         private readonly IWheel left;

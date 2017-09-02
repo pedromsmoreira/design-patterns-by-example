@@ -1,7 +1,6 @@
-﻿namespace FactoryMethodPattern.CompositionExample.ConcreteCreator
+﻿namespace FactoryMethodPattern.CompositionExample.ConcreteProduct
 {
     using System;
-    using ConcreteProduct;
     using Product;
 
     public class Car : ICar

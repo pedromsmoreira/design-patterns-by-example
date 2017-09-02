@@ -7,7 +7,7 @@
 
     public abstract class Vehicle
     {
-        public Vehicle()
+        protected Vehicle()
         {
             this.CreateParts();
         }

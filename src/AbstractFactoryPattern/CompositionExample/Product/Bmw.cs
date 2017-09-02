@@ -1,7 +1,5 @@
-﻿namespace FactoryMethodPattern.CompositionExample.ConcreteProduct
+﻿namespace AbstractFactoryPattern.CompositionExample.Product
 {
-    using Product;
-
     public class Bmw : IManufacturer
     {
         private static IManufacturer instance;

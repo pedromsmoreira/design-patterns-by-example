@@ -1,7 +1,5 @@
-﻿namespace FactoryMethodPattern.CompositionExample.ConcreteProduct
+﻿namespace AbstractFactoryPattern.CompositionExample.Product
 {
-    using Product;
-
     public class FrontSteering : ISteering
     {
         private readonly IWheel left;

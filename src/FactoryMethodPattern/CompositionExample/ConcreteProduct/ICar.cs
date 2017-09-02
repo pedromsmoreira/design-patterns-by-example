@@ -1,4 +1,4 @@
-﻿namespace FactoryMethodPattern.CompositionExample.ConcreteCreator
+﻿namespace FactoryMethodPattern.CompositionExample.ConcreteProduct
 {
     using Product;
 
