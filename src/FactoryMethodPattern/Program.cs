@@ -1,9 +1,7 @@
 ﻿namespace FactoryMethodPattern
 {
     using System;
-    using CompositionExample.Creator;
     using ConcreteCreator;
-    using FactoryMethodPattern.CompositionExample.ConcreteCreator;
 
     internal class Program
     {
