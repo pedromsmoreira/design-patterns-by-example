@@ -37,11 +37,4 @@
             }
         }
     }
-
-    public interface IBankAccount
-    {
-        void Deposit(string owner, decimal amount);
-
-        void Withdraw(string owner, decimal amount);
-    }
 }

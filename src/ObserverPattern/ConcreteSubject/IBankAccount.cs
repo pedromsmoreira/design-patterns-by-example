@@ -1,6 +1,7 @@
 ﻿namespace ObserverPattern.ConcreteSubject
 {
     using Subject;
+
     public interface IBankAccount : IAccount
     {
         void Deposit(string owner, decimal amount);

@@ -7,9 +7,9 @@
 
     public class BankClient : IClientObserver
     {
-        private readonly BankAccount clientAccount;
+        private readonly IBankAccount clientAccount;
 
-        public BankClient(string name, BankAccount account)
+        public BankClient(string name, IBankAccount account)
         {
             this.Name = name;
             this.AccessTime = DateTime.UtcNow;
