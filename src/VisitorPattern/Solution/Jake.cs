@@ -8,6 +8,7 @@ namespace VisitorPattern.Solution
         {
             Console.WriteLine("Jake loves every woman!");
         }
+
         public override void Loves(Mary mary)
         {
             Console.WriteLine("Jake loves Mary.");
