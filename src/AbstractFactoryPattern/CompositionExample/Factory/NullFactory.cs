@@ -1,6 +1,5 @@
 namespace AbstractFactoryPattern.CompositionExample.Factory
 {
-    using System;
     using AbstractFactory;
     using ConcreteProduct;
 
@@ -10,7 +9,7 @@ namespace AbstractFactoryPattern.CompositionExample.Factory
         {
         }
 
-        public ICar Create(Type model)
+        public ICar Create(string model)
         {
             return null;
         }

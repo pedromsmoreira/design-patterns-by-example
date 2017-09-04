@@ -1,11 +1,10 @@
 namespace AbstractFactoryPattern.CompositionExample.AbstractFactory
 {
-    using System;
     using ConcreteProduct;
 
     public interface IFactory
     {
-        ICar Create(Type model);
+        ICar Create(string model);
 
         bool IsNull();
     }

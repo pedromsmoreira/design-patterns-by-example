@@ -1,18 +1,18 @@
 ﻿namespace AbstractFactoryPattern.CompositionExample.Product
 {
-    public class Mercedes : IManufacturer
+    public class BmwManufacturer : IManufacturer
     {
         private static IManufacturer instance;
 
-        private Mercedes()
+        private BmwManufacturer()
         {
         }
 
-        public string Name => nameof(Mercedes);
+        public string Name => nameof(BmwManufacturer);
 
         public static IManufacturer GetInstance()
         {
-            return instance ?? (instance = new Mercedes());
+            return instance ?? (instance = new BmwManufacturer());
         }
     }
 }

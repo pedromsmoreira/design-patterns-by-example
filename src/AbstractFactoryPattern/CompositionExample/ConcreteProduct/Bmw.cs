@@ -3,9 +3,9 @@
     using AbstractFactoryPattern.CompositionExample.AbstractFactory;
     using Product;
 
-    public class BmwSeries1 : ICarFactoryMethod
+    public class Bmw : ICarFactory
     {
-        public ICar CreateCar()
+        public ICar CreateCar(string model)
         {
             var frontLeft = new Wheel();
             var frontRight = new Wheel();
@@ -14,7 +14,7 @@
 
             var frontSteering = new FrontSteering(frontLeft, frontRight);
             var twoWheelDrive = new TwoWheelDrive(rearLeft, rearRight);
-            var manufacturer = Bmw.GetInstance();
+            var manufacturer = BmwManufacturer.GetInstance();
 
             return new Car("Bmw Series 1", manufacturer, frontLeft, frontRight, rearLeft, rearRight, frontSteering, twoWheelDrive);
         }

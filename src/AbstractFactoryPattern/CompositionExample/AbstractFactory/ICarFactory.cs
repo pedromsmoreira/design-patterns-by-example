@@ -2,8 +2,8 @@
 {
     using ConcreteProduct;
 
-    public interface ICarFactoryMethod
+    public interface ICarFactory
     {
-        ICar CreateCar();
+        ICar CreateCar(string model);
     }
 }

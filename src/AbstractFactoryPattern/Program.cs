@@ -20,14 +20,8 @@
             var bmwFactory = manufacturerFactory.CreateFactory(Manufacturer.Bmw);
             var merdecesFactory = manufacturerFactory.CreateFactory(Manufacturer.Mercedes);
 
-            var bmwSeries1 = bmwFactory.Create(typeof(BmwSeries1));
-            var mercedesClassA = merdecesFactory.Create(typeof(MercedesClassA));
-
-            bmwSeries1.Driving.Accelerate(10);
-
-            mercedesClassA.Driving.Accelerate(25);
-
-            bmwSeries1.Driving.Accelerate(20);
+            var bmwSeries1 = bmwFactory.Create("Series 1");
+            var mercedesClassA = merdecesFactory.Create("Class A");
 
             bmwSeries1.PrintDetails();
             mercedesClassA.PrintDetails();
