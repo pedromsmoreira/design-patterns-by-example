@@ -1,22 +1,21 @@
 ﻿namespace AbstractFactoryPattern.CompositionExample.ConcreteProduct
 {
-    using AbstractFactoryPattern.CompositionExample.AbstractFactory;
     using Product;
 
-    public class Bmw : ICarFactory
+    public sealed class Bmw : Car
     {
-        public ICar CreateCar(string model)
+        public Bmw(string model) : base()
         {
-            var frontLeft = new Wheel();
-            var frontRight = new Wheel();
-            var rearLeft = new Wheel();
-            var rearRight = new Wheel();
+            this.Model = model;
 
-            var frontSteering = new FrontSteering(frontLeft, frontRight);
-            var twoWheelDrive = new TwoWheelDrive(rearLeft, rearRight);
-            var manufacturer = BmwManufacturer.GetInstance();
+            this.FrontLeft = new Wheel();
+            this.FrontRight = new Wheel();
+            this.RearLeft = new Wheel();
+            this.RearRight = new Wheel();
 
-            return new Car("Bmw Series 1", manufacturer, frontLeft, frontRight, rearLeft, rearRight, frontSteering, twoWheelDrive);
+            this.Steering = new FrontSteering(this.FrontLeft, this.FrontRight);
+            this.Driving = new TwoWheelDrive(this.RearLeft, this.RearRight);
+            this.Manufacturer = BmwManufacturer.GetInstance();
         }
     }
 }

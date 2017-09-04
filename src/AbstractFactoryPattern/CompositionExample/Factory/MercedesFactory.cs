@@ -11,7 +11,7 @@ namespace AbstractFactoryPattern.CompositionExample.Factory
 
         public ICar Create(string model)
         {
-            return new Mercedes().CreateCar(model);
+            return new Mercedes(model);
         }
 
         public bool IsNull()

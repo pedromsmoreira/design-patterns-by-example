@@ -11,7 +11,7 @@
 
         public ICar Create(string model)
         {
-            return new Bmw().CreateCar(model);
+            return new Bmw(model);
         }
 
         public bool IsNull()

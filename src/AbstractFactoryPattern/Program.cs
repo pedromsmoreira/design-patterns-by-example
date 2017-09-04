@@ -6,28 +6,16 @@
     using AbstractFactory;
     using CompositionExample.AbstractFactory;
     using CompositionExample.ConcreteProduct;
+    using CompositionExample.Factory;
     using CompositionExample.Product;
     using Factory;
+    using BmwFactory = Factory.BmwFactory;
+    using MercedesFactory = Factory.MercedesFactory;
 
     public class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Abstract Factory using only Composition");
-
-            IManufacturerFactory manufacturerFactory = new ManufacturerFactory();
-
-            var bmwFactory = manufacturerFactory.CreateFactory(Manufacturer.Bmw);
-            var merdecesFactory = manufacturerFactory.CreateFactory(Manufacturer.Mercedes);
-
-            var bmwSeries1 = bmwFactory.Create("Series 1");
-            var mercedesClassA = merdecesFactory.Create("Class A");
-
-            bmwSeries1.PrintDetails();
-            mercedesClassA.PrintDetails();
-
-            Console.ReadLine();
-
             char input;
             do
             {
@@ -36,19 +24,25 @@
                 input = Console.ReadKey().KeyChar;
 
                 VehicleFactory factory;
+                IManufacturerFactory compositionFactory = new ManufacturerFactory();
+                IFactory carFactory;
 
                 switch (char.ToUpper(input))
                 {
                     case 'B':
                         factory = new BmwFactory();
+                        carFactory = compositionFactory.CreateFactory(Manufacturer.Bmw);
                         break;
 
                     case 'M':
                         factory = new MercedesFactory();
+                        carFactory = compositionFactory.CreateFactory(Manufacturer.Mercedes);
                         break;
 
                     case 'K':
+
                         factory = new KtmFactory();
+                        carFactory = compositionFactory.CreateFactory(Manufacturer.None);
                         break;
 
                     case 'E':
@@ -61,7 +55,7 @@
 
                 var car = factory.CreateCar();
                 var bike = factory.CreateBike();
-
+                
                 if (!car.IsNullable())
                 {
                     Console.WriteLine($"\nCar: {car.GetType().Name}.");
@@ -70,6 +64,14 @@
                 if (!bike.IsNullable())
                 {
                     Console.WriteLine($"\nBike: {bike.GetType().Name}.");
+                }
+
+                if (!carFactory.IsNull())
+                {
+                    Console.WriteLine("Abstract Factory using only Composition");
+
+                    var createdCar = carFactory.Create("Super Model");
+                    createdCar.PrintDetails();
                 }
 
                 Console.ReadLine();
