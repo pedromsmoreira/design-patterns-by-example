@@ -3,7 +3,6 @@
     using AbstractFactory;
     using AbstractProduct;
     using Products;
-    using Bike = AbstractProduct.Bike;
 
     public class BmwFactory : VehicleFactory
     {

@@ -2,7 +2,7 @@
 {
     using AbstractProduct;
 
-    public class NullBike : AbstractProduct.Bike
+    public class NullBike : Bike
     {
         public override bool IsNullable()
         {

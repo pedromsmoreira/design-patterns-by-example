@@ -7,6 +7,8 @@
     {
         private static void Main(string[] args)
         {
+            Console.WriteLine("Factory Method with Inheritance");
+
             var v8mCar = new V8Car();
 
             v8mCar.PrintDetails();
