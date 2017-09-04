@@ -73,6 +73,10 @@
                     var createdCar = carFactory.Create("Super Model");
                     createdCar.PrintDetails();
                 }
+                else
+                {
+                    Console.WriteLine($"Factory: {carFactory.GetType()}");
+                }
 
                 Console.ReadLine();
             }
