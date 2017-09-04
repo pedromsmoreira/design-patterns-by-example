@@ -10,7 +10,7 @@
             this.FrontLeft = frontLeft;
             this.RearLeft = rearLeft;
             this.FrontRight = frontRight;
-            this.RearRight = rearLeft;
+            this.RearRight = rearRight;
 
             this.Steering = steering;
             this.Driving = driving;

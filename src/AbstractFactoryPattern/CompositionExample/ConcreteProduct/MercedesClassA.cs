@@ -1,7 +1,6 @@
-﻿namespace AbstractFactoryPattern.CompositionExample.ConcreteCreator
+﻿namespace AbstractFactoryPattern.CompositionExample.ConcreteProduct
 {
-    using ConcreteProduct;
-    using Creator;
+    using AbstractFactoryPattern.CompositionExample.AbstractFactory;
     using Product;
 
     public class MercedesClassA : ICarFactoryMethod

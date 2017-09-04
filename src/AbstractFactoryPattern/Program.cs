@@ -1,8 +1,12 @@
 ﻿namespace AbstractFactoryPattern
 {
     using System;
+    using System.Collections.Generic;
+    using System.Net.Http.Headers;
     using AbstractFactory;
-    using CompositionExample.ConcreteCreator;
+    using CompositionExample.AbstractFactory;
+    using CompositionExample.ConcreteProduct;
+    using CompositionExample.Product;
     using Factory;
 
     public class Program
@@ -11,8 +15,15 @@
         {
             Console.WriteLine("Abstract Factory using only Composition");
 
-            var bmwSeries1 = new BmwSeries1().CreateCar();
-            var mercedesClassA = new MercedesClassA().CreateCar();
+            IManufacturerFactory manufacturerFactory = new ManufacturerFactory();
+
+            var bmwFactory = manufacturerFactory.CreateFactory(Manufacturer.Bmw);
+            var merdecesFactory = manufacturerFactory.CreateFactory(Manufacturer.Mercedes);
+
+            bmwFactory.Create(CarModel.Series1);
+
+            var bmwSeries1 = bmwFactory.Create(CarModel.Series1);
+            var mercedesClassA = merdecesFactory.Create(CarModel.ClassA);
 
             bmwSeries1.Driving.Accelerate(10);
 

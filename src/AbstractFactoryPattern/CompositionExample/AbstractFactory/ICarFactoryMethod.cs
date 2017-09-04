@@ -1,4 +1,4 @@
-﻿namespace AbstractFactoryPattern.CompositionExample.Creator
+﻿namespace AbstractFactoryPattern.CompositionExample.AbstractFactory
 {
     using ConcreteProduct;
 
