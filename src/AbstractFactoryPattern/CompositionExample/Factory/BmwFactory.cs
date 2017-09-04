@@ -1,5 +1,6 @@
 ﻿namespace AbstractFactoryPattern.CompositionExample.Factory
 {
+    using System;
     using System.Collections.Generic;
     using AbstractFactory;
     using ConcreteProduct;
@@ -7,17 +8,17 @@
 
     public class BmwFactory : IFactory
     {
-        private readonly IDictionary<CarModel, ICarFactoryMethod> availableModels;
+        private readonly IDictionary<Type, ICarFactoryMethod> availableModels;
 
         public BmwFactory()
         {
-            this.availableModels = new Dictionary<CarModel, ICarFactoryMethod>
+            this.availableModels = new Dictionary<Type, ICarFactoryMethod>
             {
-                { CarModel.Series1, new BmwSeries1() }
+                { typeof(BmwSeries1), new BmwSeries1() }
             };
         }
 
-        public ICar Create(CarModel model)
+        public ICar Create(Type model)
         {
             return this.availableModels[model].CreateCar();
         }

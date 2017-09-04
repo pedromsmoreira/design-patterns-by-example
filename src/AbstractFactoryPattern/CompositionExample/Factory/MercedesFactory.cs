@@ -4,21 +4,20 @@ namespace AbstractFactoryPattern.CompositionExample.Factory
     using System.Collections.Generic;
     using AbstractFactory;
     using ConcreteProduct;
-    using Product;
 
     public class MercedesFactory : IFactory
     {
-        private readonly IDictionary<CarModel, ICarFactoryMethod> availableModels;
+        private readonly IDictionary<Type, ICarFactoryMethod> availableModels;
 
         public MercedesFactory()
         {
-            this.availableModels = new Dictionary<CarModel, ICarFactoryMethod>
+            this.availableModels = new Dictionary<Type, ICarFactoryMethod>
             {
-                { CarModel.ClassA, new MercedesClassA() }
+                { typeof(MercedesClassA), new MercedesClassA() }
             };
         }
 
-        public ICar Create(CarModel model)
+        public ICar Create(Type model)
         {
             return this.availableModels[model].CreateCar();
         }
