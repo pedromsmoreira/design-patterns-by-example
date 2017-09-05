@@ -9,9 +9,14 @@ namespace AbstractFactoryPattern.CompositionExample.Factory
         {
         }
 
-        public ICar Create(string model)
+        public ICar CreateClass1(string model)
         {
-            return new Mercedes(model);
+            return new Mercedes(model, "Class 1");
+        }
+
+        public ICar CreateClass2(string model)
+        {
+            return new Mercedes(model, "Class 2");
         }
 
         public bool IsNull()

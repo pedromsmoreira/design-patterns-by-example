@@ -5,6 +5,7 @@
     using System.Net.Http.Headers;
     using AbstractFactory;
     using CompositionExample.AbstractFactory;
+    using CompositionExample.Client;
     using CompositionExample.ConcreteProduct;
     using CompositionExample.Factory;
     using CompositionExample.Product;
@@ -24,25 +25,25 @@
                 input = Console.ReadKey().KeyChar;
 
                 VehicleFactory factory;
-                IManufacturerFactory compositionFactory = new ManufacturerFactory();
+                IManufacturerClient compositionClient = new ManufacturerClient();
                 IFactory carFactory;
 
                 switch (char.ToUpper(input))
                 {
                     case 'B':
                         factory = new BmwFactory();
-                        carFactory = compositionFactory.CreateFactory(Manufacturer.Bmw);
+                        carFactory = compositionClient.CreateFactory(Manufacturer.Bmw);
                         break;
 
                     case 'M':
                         factory = new MercedesFactory();
-                        carFactory = compositionFactory.CreateFactory(Manufacturer.Mercedes);
+                        carFactory = compositionClient.CreateFactory(Manufacturer.Mercedes);
                         break;
 
                     case 'K':
 
                         factory = new KtmFactory();
-                        carFactory = compositionFactory.CreateFactory(Manufacturer.None);
+                        carFactory = compositionClient.CreateFactory(Manufacturer.None);
                         break;
 
                     case 'E':
@@ -70,8 +71,10 @@
                 {
                     Console.WriteLine("Abstract Factory using only Composition");
 
-                    var createdCar = carFactory.Create("Super Model");
-                    createdCar.PrintDetails();
+                    var class1Car = carFactory.CreateClass1("Super Model");
+                    class1Car.PrintDetails();
+                    var class2Car = carFactory.CreateClass2("Super Model 2");
+                    class2Car.PrintDetails();
                 }
                 else
                 {

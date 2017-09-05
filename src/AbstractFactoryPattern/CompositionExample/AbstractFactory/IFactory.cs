@@ -4,7 +4,9 @@ namespace AbstractFactoryPattern.CompositionExample.AbstractFactory
 
     public interface IFactory
     {
-        ICar Create(string model);
+        ICar CreateClass1(string model);
+
+        ICar CreateClass2(string model);
 
         bool IsNull();
     }

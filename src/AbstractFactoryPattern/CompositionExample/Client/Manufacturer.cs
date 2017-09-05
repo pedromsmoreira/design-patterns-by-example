@@ -1,4 +1,4 @@
-namespace AbstractFactoryPattern.CompositionExample.AbstractFactory
+namespace AbstractFactoryPattern.CompositionExample.Client
 {
     public enum Manufacturer
     {

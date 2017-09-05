@@ -9,9 +9,14 @@
         {
         }
 
-        public ICar Create(string model)
+        public ICar CreateClass1(string model)
         {
-            return new Bmw(model);
+            return new Bmw(model, "Class 1");
+        }
+
+        public ICar CreateClass2(string model)
+        {
+            return new Bmw(model, "Class 2");
         }
 
         public bool IsNull()

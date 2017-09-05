@@ -4,6 +4,7 @@
 
     public interface ICar
     {
+        string Category { get; }
         IWheel FrontLeft { get; }
 
         IWheel FrontRight { get; }

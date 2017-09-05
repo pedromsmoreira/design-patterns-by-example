@@ -1,14 +1,14 @@
-namespace AbstractFactoryPattern.CompositionExample.AbstractFactory
+namespace AbstractFactoryPattern.CompositionExample.Client
 {
-    using System;
     using System.Collections.Generic;
+    using AbstractFactory;
     using Factory;
 
-    public class ManufacturerFactory : IManufacturerFactory
+    public class ManufacturerClient : IManufacturerClient
     {
         private readonly IDictionary<Manufacturer, IFactory> availableFactories;
 
-        public ManufacturerFactory()
+        public ManufacturerClient()
         {
             this.availableFactories = new Dictionary<Manufacturer, IFactory>
             {
