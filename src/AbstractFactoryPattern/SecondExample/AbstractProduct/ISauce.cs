@@ -2,5 +2,8 @@
 {
     public interface ISauce
     {
+        string Type { get; }
+
+        int Quantity { get; }
     }
 }

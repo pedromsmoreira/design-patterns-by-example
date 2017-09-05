@@ -4,5 +4,12 @@
 
     public class BarbecueSauce : ISauce
     {
+        public BarbecueSauce()
+        {
+        }
+
+        public string Type => nameof(BarbecueSauce);
+
+        public int Quantity => 200;
     }
 }

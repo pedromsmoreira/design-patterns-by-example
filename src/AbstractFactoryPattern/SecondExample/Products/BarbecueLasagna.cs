@@ -5,16 +5,16 @@
     using AbstractProduct;
     using Factory;
 
-    public class TomatoLasagna : Lasagna
+    public class BarbecueLasagna : Lasagna
     {
         private readonly ILasagnaIngredientsFactory ingredientsFactory;
 
-        public TomatoLasagna()
+        public BarbecueLasagna()
         {
-            this.ingredientsFactory = new ItalianLasagnaIngredientsFactory();
+            this.ingredientsFactory = new GlobalLasagnaIngredientFactory();
         }
 
-        public override string Name => nameof(TomatoLasagna);
+        public override string Name => nameof(BarbecueLasagna);
 
         public override void Prepare()
         {

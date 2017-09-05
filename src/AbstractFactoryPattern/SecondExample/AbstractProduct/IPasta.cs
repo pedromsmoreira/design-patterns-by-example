@@ -2,5 +2,6 @@
 {
     public interface IPasta
     {
+        int NumberOfLayers { get; }
     }
 }

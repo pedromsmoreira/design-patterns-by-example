@@ -11,8 +11,11 @@
         {
             Console.WriteLine("Lasagna Abstract Factory!");
 
-            var store = new ItalianLasagnaStore();
+            var store = new LasagnaStore();
             store.OrderLasagna("tomato");
+
+            Console.WriteLine("Barbecue Lasagna!");
+            store.OrderLasagna("barbecue");
 
             Console.WriteLine("Abstract Factory!");
             char input;

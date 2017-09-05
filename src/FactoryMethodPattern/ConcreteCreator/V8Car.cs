@@ -5,7 +5,7 @@ namespace FactoryMethodPattern.ConcreteCreator
 
     public class V8Car : Vehicle
     {
-        public override string Name => nameof(this.Name);
+        public override string Name => nameof(V8Car);
 
         public override void CreateParts()
         {

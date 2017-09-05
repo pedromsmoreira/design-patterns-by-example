@@ -4,5 +4,6 @@
 
     public class Mozzarella : ICheese
     {
+        public string Type => nameof(Mozzarella);
     }
 }

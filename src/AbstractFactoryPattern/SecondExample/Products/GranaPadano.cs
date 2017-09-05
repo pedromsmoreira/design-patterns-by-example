@@ -4,5 +4,6 @@
 
     public class GranaPadano : ICheese
     {
+        public string Type => nameof(GranaPadano);
     }
 }

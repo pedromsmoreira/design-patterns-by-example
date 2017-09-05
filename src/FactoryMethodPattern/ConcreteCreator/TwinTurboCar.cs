@@ -5,7 +5,7 @@
 
     public class TwinTurboCar : Vehicle
     {
-        public override string Name => nameof(this.Name);
+        public override string Name => nameof(TwinTurboCar);
 
         public override void CreateParts()
         {

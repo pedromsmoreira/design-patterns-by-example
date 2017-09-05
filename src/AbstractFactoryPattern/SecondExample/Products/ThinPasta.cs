@@ -4,5 +4,6 @@
 
     public class ThinPasta : IPasta
     {
+        public int NumberOfLayers => 4;
     }
 }

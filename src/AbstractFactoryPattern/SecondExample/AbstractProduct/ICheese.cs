@@ -2,5 +2,6 @@
 {
     public interface ICheese
     {
+        string Type { get; }
     }
 }
