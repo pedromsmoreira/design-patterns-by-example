@@ -14,7 +14,6 @@
             var store = new ItalianLasagnaStore();
             store.OrderLasagna("tomato");
 
-
             Console.WriteLine("Abstract Factory!");
             char input;
             do

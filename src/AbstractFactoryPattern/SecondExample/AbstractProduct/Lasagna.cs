@@ -4,13 +4,13 @@
 
     public abstract class Lasagna
     {
-        public abstract void Prepare();
-
         public IPasta Pasta { get; set; }
 
         public ICheese Cheese { get; set; }
 
         public ISauce Sauce { get; set; }
+
+        public abstract void Prepare();
 
         public void Serve()
         {

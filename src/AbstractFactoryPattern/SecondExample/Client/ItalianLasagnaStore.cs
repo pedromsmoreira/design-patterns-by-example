@@ -1,6 +1,5 @@
 ﻿namespace AbstractFactoryPattern.SecondExample.Client
 {
-    using AbstractProduct;
     using Products;
 
     public class ItalianLasagnaStore : ILasagnaStore
