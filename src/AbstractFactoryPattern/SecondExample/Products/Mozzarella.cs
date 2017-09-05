@@ -2,7 +2,7 @@
 {
     using AbstractProduct;
 
-    public class ThickCrustDough : IDough
+    public class Mozzarella : ICheese
     {
     }
 }

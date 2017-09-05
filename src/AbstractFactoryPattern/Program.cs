@@ -3,12 +3,19 @@
     using System;
     using AbstractFactory;
     using Factory;
+    using SecondExample.Client;
 
     public class Program
     {
         private static void Main(string[] args)
         {
-            Console.WriteLine("Client!");
+            Console.WriteLine("Lasagna Abstract Factory!");
+
+            var store = new ItalianLasagnaStore();
+            store.OrderLasagna();
+
+
+            Console.WriteLine("Abstract Factory!");
             char input;
             do
             {

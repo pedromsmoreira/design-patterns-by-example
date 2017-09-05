@@ -1,7 +1,8 @@
 ﻿namespace AbstractFactoryPattern.SecondExample.Products
 {
-    public interface IDough
+    using AbstractProduct;
+
+    public class ThickPasta : IPasta
     {
-        
     }
 }

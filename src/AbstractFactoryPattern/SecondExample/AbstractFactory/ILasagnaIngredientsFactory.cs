@@ -1,7 +1,13 @@
 ﻿namespace AbstractFactoryPattern.SecondExample.AbstractFactory
 {
-    public interface IPizzaIngredientsFactory
+    using AbstractProduct;
+
+    public interface ILasagnaIngredientsFactory
     {
-        
+        IPasta CreatePasta();
+
+        ISauce CreateSauce();
+
+        ICheese CreateCheese();
     }
 }
