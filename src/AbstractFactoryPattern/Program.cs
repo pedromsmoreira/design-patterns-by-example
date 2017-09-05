@@ -12,7 +12,7 @@
             Console.WriteLine("Lasagna Abstract Factory!");
 
             var store = new ItalianLasagnaStore();
-            store.OrderLasagna();
+            store.OrderLasagna("tomato");
 
 
             Console.WriteLine("Abstract Factory!");
