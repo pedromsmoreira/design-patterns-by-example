@@ -33,3 +33,15 @@ We want to design reusable components, but dependencies are potentially blocking
 > https://www.exceptionnotfound.net/chain-of-responsibility-the-daily-design-pattern/
 
 > http://www.c-sharpcorner.com/UploadFile/chinnasrihari/chain-of-responsibility-design-pattern/
+
+### Bonus Pattern
+
+## Specification Pattern
+
+### Intent
+
+Segregate business rules based on the Single Reponsibility Principle.
+
+This rules can be chained together using boolean operands (__AND__, __OR__ or __NOT__) to create complex business rules.
+
+Each rule is called Specification.
