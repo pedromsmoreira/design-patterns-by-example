@@ -30,7 +30,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediatorPattern", "src\Medi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisitorPattern", "src\VisitorPattern\VisitorPattern.csproj", "{9E0BE05A-EFC8-4BC8-AA5D-847514A7698C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverPattern", "src\ObserverPattern\ObserverPattern.csproj", "{CF07133A-644E-43D1-9F0B-2658AF028EBA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "src\ObserverPattern\ObserverPattern.csproj", "{CF07133A-644E-43D1-9F0B-2658AF028EBA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfReponsibilityPattern", "src\ChainOfReponsibilityPattern\ChainOfReponsibilityPattern.csproj", "{6CD853E1-8058-47CB-BD7C-07F5140F0D74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -70,6 +72,10 @@ Global
 		{CF07133A-644E-43D1-9F0B-2658AF028EBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF07133A-644E-43D1-9F0B-2658AF028EBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF07133A-644E-43D1-9F0B-2658AF028EBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -83,6 +89,7 @@ Global
 		{7B6C35F3-8D82-4251-8D0B-418F359ACD69} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 		{9E0BE05A-EFC8-4BC8-AA5D-847514A7698C} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 		{CF07133A-644E-43D1-9F0B-2658AF028EBA} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
+		{6CD853E1-8058-47CB-BD7C-07F5140F0D74} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F76BEA8-697A-427D-8C40-96572FDC3AD9}
