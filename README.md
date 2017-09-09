@@ -31,7 +31,7 @@ Each pattern has an example implementation in order to allow a better approach t
 
 ### Behavioral
 
-- [ ] Chain of Responsibility
+- [x] [Chain of Responsibility](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/ChainOfResponsibilityPattern)
 - [ ] Command
 - [ ] Iterator
 - [x] [Mediator](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/MediatorPattern)
