@@ -38,7 +38,7 @@ Each pattern has an example implementation in order to allow a better approach t
 - [ ] Memento
 - [x] [Observer](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/ObserverPattern)
 - [ ] State
-- [ ] Strategy
+- [x] [Strategy](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/StrategyPattern)
 - [ ] Template Method
 - [x] [Visitor](https://github.com/pedromsmoreira/design-patterns-by-example/tree/master/src/VisitorPattern)
 
