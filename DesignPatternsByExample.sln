@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{D54E4C11-92D5-4B35-AD36-E5E7E6045588}"
 EndProject
@@ -32,7 +32,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "VisitorPattern", "src\Visit
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObserverPattern", "src\ObserverPattern\ObserverPattern.csproj", "{CF07133A-644E-43D1-9F0B-2658AF028EBA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChainOfReponsibilityPattern", "src\ChainOfReponsibilityPattern\ChainOfReponsibilityPattern.csproj", "{6CD853E1-8058-47CB-BD7C-07F5140F0D74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChainOfReponsibilityPattern", "src\ChainOfReponsibilityPattern\ChainOfReponsibilityPattern.csproj", "{6CD853E1-8058-47CB-BD7C-07F5140F0D74}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StrategyPattern", "src\StrategyPattern\StrategyPattern.csproj", "{46D321BC-CB3A-474E-B653-F37439A4B137}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -76,6 +78,10 @@ Global
 		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CD853E1-8058-47CB-BD7C-07F5140F0D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D321BC-CB3A-474E-B653-F37439A4B137}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D321BC-CB3A-474E-B653-F37439A4B137}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D321BC-CB3A-474E-B653-F37439A4B137}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D321BC-CB3A-474E-B653-F37439A4B137}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -90,6 +96,7 @@ Global
 		{9E0BE05A-EFC8-4BC8-AA5D-847514A7698C} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 		{CF07133A-644E-43D1-9F0B-2658AF028EBA} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 		{6CD853E1-8058-47CB-BD7C-07F5140F0D74} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
+		{46D321BC-CB3A-474E-B653-F37439A4B137} = {4B157FFD-B85F-4627-8EB0-E403330E7696}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2F76BEA8-697A-427D-8C40-96572FDC3AD9}
