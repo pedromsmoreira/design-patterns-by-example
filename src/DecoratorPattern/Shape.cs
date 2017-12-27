@@ -1,3 +1,4 @@
-public interface IShape {
+public interface IShape 
+{
    void Draw();
 }
